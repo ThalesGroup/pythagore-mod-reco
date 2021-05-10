@@ -1,4 +1,4 @@
-# Authors: Thomas Courtat, Hélion du Mas des Bourboux
+# Authors: Thomas Courtat, Helion du Mas des Bourboux
 # License: MIT
 
 from setuptools import setup, find_packages
