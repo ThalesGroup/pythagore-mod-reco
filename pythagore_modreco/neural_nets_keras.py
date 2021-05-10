@@ -30,7 +30,7 @@ from tensorflow.python.keras.layers.core import Flatten, Dense, Dropout, Reshape
 from tensorflow.python.keras.layers.convolutional import Conv1D, AveragePooling1D, ZeroPadding2D, Convolution2D, MaxPooling1D, MaxPooling2D
 
 def get_LModCNN(input_shp,output_shp,verbose=False):
-    """ Generate LModCNN architecture as defined in Courtat and du Mas des Bourboux, 
+    """ Generate LModCNN architecture as defined in Courtat and du Mas des Bourboux,
         A light neural network for modulation detection under impairments, ISNCC 2021
 
     Arguments:
@@ -63,7 +63,7 @@ def get_LModCNN(input_shp,output_shp,verbose=False):
     return model
 
 def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
-    """ Generate LMod CNN with residual connexion architecture as defined in Courtat and du Mas des Bourboux, 
+    """ Generate LMod CNN with residual connexion architecture as defined in Courtat and du Mas des Bourboux,
         A light neural network for modulation detection under impairments, ISNCC 2021
 
     Arguments:
@@ -72,9 +72,9 @@ def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
         verbose (bool): set verbosity
     """
     kernel_size = 7
-    
+
     X_input = Input(input_shp)
-    
+
     X = Conv1D(filters=8, kernel_size=1, activation='relu', padding="same",
                input_shape=input_shp,
                kernel_initializer='glorot_uniform')(X_input)
@@ -99,7 +99,7 @@ def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
                kernel_initializer='glorot_uniform')(X)
     X = add([X,X_shortcut])
     X = Activation("relu")(X)
-    
+
     X = Conv1D(filters=32, kernel_size=1, activation='relu', padding="same",
                kernel_initializer='glorot_uniform')(X)
 
@@ -122,9 +122,9 @@ def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
     X = Conv1D(filters=64, kernel_size=kernel_size, padding="same",
                kernel_initializer='glorot_uniform')(X)
     X = add([X,X_shortcut])
-    
+
     X = Activation("relu")(X)
-    
+
     X = AveragePooling1D(pool_size=input_shp[0])(X)
 
     X = Flatten()(X)
@@ -142,7 +142,7 @@ def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
     return model
 
 def get_RMLConvNet(input_shp,output_shp,verbose=False):
-    """ Generate RMLConvNet as defined in O'Shea et Al., Convolutional radio 
+    """ Generate RMLConvNet as defined in O'Shea et Al., Convolutional radio
     modulation recognition networks, 2016
     the implementation is an adaptation of
      https://github.com/radioML/examples/blob/master/modulation_recognition/RML2016.10a_VTCNN2_example.ipynb
@@ -231,7 +231,7 @@ def residual_stack(X,Filters,Seq,max_pool):
         X (tensor): input
         Filters (int): number of filters
         Seq (str): module name
-        max_pool (bool): enable max pooling at the end 
+        max_pool (bool): enable max pooling at the end
     """
 
     #1*1 Conv Linear
@@ -267,7 +267,7 @@ def residual_stack(X,Filters,Seq,max_pool):
 
     #MaxPooling
     if max_pool:
-        X = MaxPooling2D(pool_size=(2, 1), strides=(2, 1), padding='valid', 
+        X = MaxPooling2D(pool_size=(2, 1), strides=(2, 1), padding='valid',
                         data_format="channels_last")(X)
 
     return X
@@ -298,7 +298,7 @@ def get_RMLResNet(input_shp,output_shp,verbose=False):
     X = residual_stack(X,32,"ReStk5",True)  #shape:(1,32,32)
     #Residual Srack 6
     X = residual_stack(X,32,"ReStk6",True)  #shape:(1,16,32)
-    
+
     #Full Con 1
     X = Flatten()(X)
     X = Dense(128, activation='selu', kernel_initializer='he_normal', name="dense1")(X)
