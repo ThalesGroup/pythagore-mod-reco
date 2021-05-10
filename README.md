@@ -1,4 +1,4 @@
-# PyThagore ModReco
+# pythagore-mod-reco
 Modulation recognition AI algorithms benchmark.
 This project contains a Jupyter Notebook for the interactive benchmark, deep learning networks and a few utility functions gathered into a package. 
 
@@ -29,7 +29,7 @@ python -m pip install -r requirements.txt
 ### Get data
 The trainning and testing of algorithms can be performed on several datasets:
 
-- The PyThagore ModReco AugMod dataset as presented in our article: 
+- The pythagore-mod-reco AugMod dataset as presented in our article:
 
 ```bash 
 wget https://augmod.blob.core.windows.net/augmod/augmod.zip
