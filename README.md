@@ -1,6 +1,6 @@
 # pythagore-mod-reco
 Modulation recognition AI algorithms benchmark.
-This project contains a Jupyter Notebook for the interactive benchmark, deep learning networks and a few utility functions gathered into a package. 
+This project contains a Jupyter Notebook for the interactive benchmark, deep learning networks and a few utility functions gathered into a package.
 
 ## Package to run modulation recognition on raw I/Q radio samples
 
@@ -9,7 +9,7 @@ submitted to the "2021 International Symposium on Networks, Computers and Commun
 (http://www.isncc-conf.org/)
 
 ## Setup
-The package requires Python >=3.7. 
+The package requires Python >=3.7.
 
 It has been tested on Nvidia GPU with cuda 10.2.
 
@@ -31,10 +31,10 @@ The trainning and testing of algorithms can be performed on several datasets:
 
 - The pythagore-mod-reco AugMod dataset as presented in our article:
 
-```bash 
+```bash
 wget https://augmod.blob.core.windows.net/augmod/augmod.zip
 unzip augmod.zip
-``` 
+```
 - RML 2016 datasets from DeepSig:
 ```bash
 wget https://opendata.deepsig.io/datasets/2016.04/2016.04C.multisnr.tar.bz2?__hstc=233546881.9c91e0549f9b6bfce6708a49c211c1c9.1614872457734.1614872457734.1614872457734.1&__hssc=233546881.1.1614872457735&__hsfp=1843090487
