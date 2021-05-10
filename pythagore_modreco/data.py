@@ -26,7 +26,7 @@
 from h5py import File
 from numpy import array, zeros, sqrt, mean, vstack
 from numpy.random import choice
-import pickle 
+import pickle
 
 """
 Gathers function to open different datasets of interest
@@ -84,8 +84,8 @@ def read_RML2016(fname='./2016.04C.multisnr.pkl',snrs=None,verbose=False):
         return array(X), array(lbl) , array(snrX)
 
     Xd = pickle.load(open(fname,'rb'), encoding='latin1')
-    # Xd: dictionnary with 
-    # keys = (str: modulation_name , int: snr) and 
+    # Xd: dictionnary with
+    # keys = (str: modulation_name , int: snr) and
     # values = tensor of signals which shape is (nb_of_signals, 2 , 128)
 
     mods_,snrs_ = list( zip( *Xd.keys() ) )
