@@ -29,7 +29,7 @@ from numpy.random import choice
 
 class TimeHistory(Callback):
     """ Keras callback tto monitor execution time during training
-    
+
     """
     def on_train_begin(self, logs={}):
         self.times = []
@@ -40,8 +40,6 @@ class TimeHistory(Callback):
     def on_epoch_end(self, epoch, logs={}):
         self.times.append(time.time() - self.epoch_time_start)
 
-
-
 def split_dataset( data, labels,
                     p_train=0.8, p_valid=0.0, p_test=0.0,
                     ):
@@ -50,12 +48,12 @@ def split_dataset( data, labels,
 
         Arguments:
         data (tensor): input dataset
-        labels (tensor): label vector associated to data 
-        p_train (float): proportion of training data 
+        labels (tensor): label vector associated to data
+        p_train (float): proportion of training data
         p_valid (float): proportion of validation data
-        p_test (float): proportion of test data 
+        p_test (float): proportion of test data
     """
-    
+
     def aux(D_ , L_,  p_, idx_):
 
         n_tot_examples_ = D_.shape[0]
