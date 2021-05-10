@@ -99,7 +99,7 @@ def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
                kernel_initializer='glorot_uniform')(X)
     X = add([X,X_shortcut])
     X = Activation("relu")(X)
-    
+
     X = Conv1D(filters=32, kernel_size=1, activation='relu', padding="same",
                kernel_initializer='glorot_uniform')(X)
 
@@ -124,7 +124,7 @@ def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
     X = add([X,X_shortcut])
 
     X = Activation("relu")(X)
-    
+
     X = AveragePooling1D(pool_size=input_shp[0])(X)
 
     X = Flatten()(X)
