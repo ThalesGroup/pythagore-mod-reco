@@ -29,7 +29,7 @@ from numpy.random import choice
 import pickle 
 
 """
-Gathers function to open different datasets of interest 
+Gathers function to open different datasets of interest
 """
 
 def read_augmod(fname):
@@ -39,15 +39,15 @@ def read_augmod(fname):
         fname (string): dataset path
 
     Returns:
-        (dict): loaded dataset 
+        (dict): loaded dataset
     """
     data = dict()
     with File(fname,'r') as f:
         data['classes'] =[c.decode() for c in f['classes'] ]
         data['signals'] = array(f['signals'] )
         data['modulations'] = array(f['modulations'] )
-        data['snr'] = array(f['snr'] ) 
-        data['frequency_offsets'] = array(f['frequency_offsets'] )      
+        data['snr'] = array(f['snr'] )
+        data['frequency_offsets'] = array(f['frequency_offsets'] )
     return data
 
 
@@ -60,14 +60,14 @@ def read_RML2016(fname='./2016.04C.multisnr.pkl',snrs=None,verbose=False):
         verbose (bool): set verbosity
 
     Returns:
-        (tuple of arrays): data, labels, snrs, list of possible modulations  
+        (tuple of arrays): data, labels, snrs, list of possible modulations
     """
     def _create_data_set(snrs_):
-    
+
         X = []
         lbl = []
         snrX = []
-    
+
         for mod in mods:
             for snr in snrs_:
                 sigs = Xd[(mod,snr)]
@@ -76,7 +76,7 @@ def read_RML2016(fname='./2016.04C.multisnr.pkl',snrs=None,verbose=False):
                 tmp_sigs[:,sigs.shape[2]:] = sigs[:,1,:]
                 norm = sqrt(mean(tmp_sigs**2,axis=1))
                 X.append(Xd[(mod,snr)]/norm[:,None,None])
-                for i in range(Xd[(mod,snr)].shape[0]):  
+                for i in range(Xd[(mod,snr)].shape[0]):
                     lbl.append(mod)
                     snrX.append(snr)
         X = vstack(X)
@@ -88,7 +88,7 @@ def read_RML2016(fname='./2016.04C.multisnr.pkl',snrs=None,verbose=False):
     # keys = (str: modulation_name , int: snr) and 
     # values = tensor of signals which shape is (nb_of_signals, 2 , 128)
 
-    mods_,snrs_ = list( zip( *Xd.keys() ) ) 
+    mods_,snrs_ = list( zip( *Xd.keys() ) )
     snrs_ = sorted( list( set( snrs_ ) ) )
     mods = sorted( list( set( mods_ ) ) )
 
