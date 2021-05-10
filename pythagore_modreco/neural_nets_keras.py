@@ -1,4 +1,4 @@
-# Authors: Hélion du Mas des Bourboux <helion.dumasdesbourboux'at'thalesgroup.com>
+# Authors: Helion du Mas des Bourboux <helion.dumasdesbourboux'at'thalesgroup.com>
 #         Thomas Courtat <thomas.courtat'at'thalesgroup.com>
 
 # MIT License
