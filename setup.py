@@ -3,14 +3,14 @@
 
 from setuptools import setup, find_packages
 
-DISTNAME = 'PyThagore-ModReco'
+DISTNAME = 'pythagore-mod-reco'
 DESCRIPTION = 'Modulation recognition algorithms and evaluation'
 LONG_DESCRIPTION = open('README.md').read()
-MAINTAINER = 'Hélion du Mas des Bourboux & Thomas Courtat'
+MAINTAINER = 'Helion du Mas des Bourboux & Thomas Courtat'
 MAINTAINER_EMAIL = "helion.dumasdesbourboux'at'thalesgroup.com"
 URL = 'https://github.com/ThalesGroup/'
 LICENSE = 'MIT'
-VERSION = '0.1.0'
+VERSION = '0.0.2'
 
 setup(
     name=DISTNAME,
