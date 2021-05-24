@@ -1,5 +1,5 @@
 numpy>=1.18.4
 matplotlib>=3.4.1
 h5py>=2.10.0
-tensorflow==2.2.0
+tensorflow==2.5.0
 jupyterlab>=3.0.14
