@@ -1,5 +1,8 @@
 # Release Notes
 
+## Version 0.0.3 - 2021/05/24
+* add contributing
+
 ## Version 0.0.2 - 2021/05/10
 * change name repository
 * remove French accents

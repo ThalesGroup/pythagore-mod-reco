@@ -10,7 +10,7 @@ MAINTAINER = 'Helion du Mas des Bourboux & Thomas Courtat'
 MAINTAINER_EMAIL = "helion.dumasdesbourboux'at'thalesgroup.com"
 URL = 'https://github.com/ThalesGroup/'
 LICENSE = 'MIT'
-VERSION = '0.0.2'
+VERSION = '0.0.3'
 
 setup(
     name=DISTNAME,
