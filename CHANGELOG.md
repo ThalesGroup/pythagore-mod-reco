@@ -1,5 +1,8 @@
 # Release Notes
 
+## Version 0.0.4 - 2021/06/28
+* ask for at least tensorflow 2.5.0
+
 ## Version 0.0.3 - 2021/05/24
 * allow newer versions of tensorflow
 * add contributing
