@@ -1,5 +1,10 @@
 # Release Notes
 
+## Version 0.0.5 - 2021/07/22
+* update to be using tensorflow.keras.layers
+* allow dynamic signal length when possible
+* remove a trailing space
+
 ## Version 0.0.4 - 2021/06/28
 * ask for at least tensorflow 2.5.0
 

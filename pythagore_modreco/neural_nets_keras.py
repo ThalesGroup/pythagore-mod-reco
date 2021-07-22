@@ -26,8 +26,8 @@
 from tensorflow.keras.models import Model
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Input, AlphaDropout, GlobalAveragePooling1D, BatchNormalization, add
-from tensorflow.python.keras.layers.core import Flatten, Dense, Dropout, Reshape, Activation
-from tensorflow.python.keras.layers.convolutional import Conv1D, AveragePooling1D, ZeroPadding2D, Convolution2D, MaxPooling1D, MaxPooling2D
+from tensorflow.keras.layers import Flatten, Dense, Dropout, Reshape, Activation
+from tensorflow.keras.layers import Conv1D, AveragePooling1D, ZeroPadding2D, Convolution2D, MaxPooling1D, MaxPooling2D
 
 def get_LModCNN(input_shp,output_shp,verbose=False):
     """ Generate LModCNN architecture as defined in Courtat and du Mas des Bourboux,
@@ -48,9 +48,7 @@ def get_LModCNN(input_shp,output_shp,verbose=False):
 
     model.add(Conv1D(filters=64, kernel_size=7, activation='relu', padding="same"))
 
-    model.add(AveragePooling1D(pool_size=input_shp[0]))
-
-    model.add(Flatten())
+    model.add(GlobalAveragePooling1D())
 
     model.add(Dense(units=256, activation='relu', kernel_initializer='he_normal'))
     model.add(Dropout(rate=0.5))
@@ -125,9 +123,7 @@ def get_LModCNNResNetRelu(input_shp,output_shp,verbose=False):
 
     X = Activation("relu")(X)
 
-    X = AveragePooling1D(pool_size=input_shp[0])(X)
-
-    X = Flatten()(X)
+    X = GlobalAveragePooling1D()(X)
 
     X = Dense(units=256, activation='relu', kernel_initializer='he_normal')(X)
     X = Dropout(rate=0.5)(X)
