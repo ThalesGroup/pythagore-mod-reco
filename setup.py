@@ -10,7 +10,7 @@ MAINTAINER = 'Helion du Mas des Bourboux & Thomas Courtat'
 MAINTAINER_EMAIL = "helion.dumasdesbourboux'at'thalesgroup.com"
 URL = 'https://github.com/ThalesGroup/'
 LICENSE = 'MIT'
-VERSION = '0.0.5'
+VERSION = '0.0.6'
 
 setup(
     name=DISTNAME,
@@ -22,10 +22,10 @@ setup(
     version=VERSION,
     install_requires=[
         'numpy>=1.19.5',
-        'matplotlib>=3.4.2',
+        'matplotlib>=3.4.3',
         'h5py>=3.1.0',
-        'tensorflow>=2.5.0',
-        'jupyterlab>=3.0.16',
+        'tensorflow>=2.6.0',
+        'jupyterlab>=3.1.12',
     ],
     packages=['pythagore_modreco'],
     long_description=LONG_DESCRIPTION,
