@@ -3,6 +3,7 @@
 ## Version 0.0.6 - 2021/09/16
 * update to be using tensorflow>=2.6.0
 * update readme with Kaggle links
+* update jupyter to show all versions of used packaes
 
 ## Version 0.0.5 - 2021/07/22
 * update to be using tensorflow.keras.layers
