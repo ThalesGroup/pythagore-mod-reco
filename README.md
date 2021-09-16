@@ -5,8 +5,8 @@ This project contains a Jupyter Notebook for the interactive benchmark, deep lea
 ## Package to run modulation recognition on raw I/Q radio samples
 
 The acompagning paper is: "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021, in prep."
-submitted to the "2021 International Symposium on Networks, Computers and Communications (ISNCC'21)".
-(http://www.isncc-conf.org/)
+submitted to the "2021 International Symposium on Networks, Computers and Communications (ISNCC'21)"
+(http://www.isncc-conf.org/).
 
 ## Setup
 The package requires Python >=3.7.
@@ -31,10 +31,14 @@ The trainning and testing of algorithms can be performed on several datasets:
 
 - The pythagore-mod-reco AugMod dataset as presented in our article:
 
-```bash
-wget https://augmod.blob.core.windows.net/augmod/augmod.zip
-unzip augmod.zip
-```
+    - can be found on Kaggle: https://www.kaggle.com/hdumasde/pythagoremodreco
+
+    - can be downloaded with wget
+	```bash
+	wget https://augmod.blob.core.windows.net/augmod/augmod.zip
+	unzip augmod.zip
+	```
+
 - RML 2016 datasets from DeepSig:
 ```bash
 wget https://opendata.deepsig.io/datasets/2016.04/2016.04C.multisnr.tar.bz2?__hstc=233546881.9c91e0549f9b6bfce6708a49c211c1c9.1614872457734.1614872457734.1614872457734.1&__hssc=233546881.1.1614872457735&__hsfp=1843090487
@@ -42,15 +46,15 @@ wget https://opendata.deepsig.io/datasets/2016.10/RML2016.10b.tar.bz2?__hstc=233
 wget https://opendata.deepsig.io/datasets/2016.10/RML2016.10a.tar.bz2?__hstc=233546881.9c91e0549f9b6bfce6708a49c211c1c9.1614872457734.1614872457734.1614872457734.1&__hssc=233546881.1.1614872457735&__hsfp=1843090487
 ```
 
-- RML 2018 dataset from DeepSig
+- RML 2018 dataset from DeepSig:
 
 To get RadioML2018.01A  you should connect to https://www.deepsig.ai/datasets
 
-Please update path `data_path` and `log_path` in `jupyter/train-test-modulationreco.ipynb` to where data are located and to where you want to store log files
+Please update the following paths: `data_path` and `log_path` in `jupyter/train-test-modulationreco.ipynb`, to where data are located and to where you want to store log files.
 
 ## Run
 
-- Train and test the different networks on each datasets running `jupyter/train-test-modulationreco.ipynb`
+- Train and test the different networks on each datasets running `jupyter/train-test-modulationreco.ipynb`.
 
 ## Source
 
