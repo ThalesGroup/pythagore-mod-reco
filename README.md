@@ -8,6 +8,8 @@ The acompagning paper is: "A light neural network for modulation detection under
 submitted to the "2021 International Symposium on Networks, Computers and Communications (ISNCC'21)"
 (http://www.isncc-conf.org/).
 
+The dataset, and a notebook to reproduce the results can be found on Kaggle: https://www.kaggle.com/hdumasde/pythagoremodreco
+
 ## Setup
 The package requires Python >=3.7.
 
