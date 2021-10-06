@@ -1,5 +1,8 @@
 # Release Notes
 
+## Version 0.0.7 - 2021/10/06
+* Improve the way the version number is defined
+
 ## Version 0.0.6 - 2021/09/16
 * update to be using tensorflow>=2.6.0
 * update readme with Kaggle links
