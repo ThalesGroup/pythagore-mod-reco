@@ -10,7 +10,8 @@ MAINTAINER = 'Helion du Mas des Bourboux & Thomas Courtat'
 MAINTAINER_EMAIL = "helion.dumasdesbourboux'at'thalesgroup.com"
 URL = 'https://github.com/ThalesGroup/'
 LICENSE = 'MIT'
-VERSION = '0.0.6'
+exec(open('pythagore_modreco/_version.py').read())
+VERSION = __version__
 
 setup(
     name=DISTNAME,
