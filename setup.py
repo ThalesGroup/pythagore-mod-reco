@@ -10,8 +10,12 @@ MAINTAINER = 'Helion du Mas des Bourboux & Thomas Courtat'
 MAINTAINER_EMAIL = "helion.dumasdesbourboux'at'thalesgroup.com"
 URL = 'https://github.com/ThalesGroup/'
 LICENSE = 'MIT'
+
 exec(open('pythagore_modreco/_version.py').read())
 VERSION = __version__
+
+with open('requirements.txt') as f:
+    REQUIRED = f.read().splitlines()
 
 setup(
     name=DISTNAME,
@@ -21,13 +25,7 @@ setup(
     license=LICENSE,
     url=URL,
     version=VERSION,
-    install_requires=[
-        'numpy>=1.19.5',
-        'matplotlib>=3.4.3',
-        'h5py>=3.1.0',
-        'tensorflow>=2.6.0',
-        'jupyterlab>=3.1.12',
-    ],
+    install_requires=REQUIRED,
     packages=['pythagore_modreco'],
     long_description=LONG_DESCRIPTION,
     long_description_content_type="text/markdown",
