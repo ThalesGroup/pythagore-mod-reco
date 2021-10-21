@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 0.0.8 - 2021/10/21
+* Improve the way the requirement is read by setup.py
+* harmonize the package name
+
 ## Version 0.0.7 - 2021/10/06
 * Improve the way the version number is defined
 
