@@ -3,7 +3,7 @@
 
 from setuptools import setup, find_packages
 
-DISTNAME = 'pythagore-mod-reco'
+DISTNAME = 'pythagore-modreco'
 DESCRIPTION = 'Modulation recognition algorithms and evaluation'
 LONG_DESCRIPTION = open('README.md').read()
 MAINTAINER = 'Helion du Mas des Bourboux & Thomas Courtat'
