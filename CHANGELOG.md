@@ -1,5 +1,8 @@
 # Release Notes
 
+## Version 0.0.9 - 2021/11/10
+* Get the requirement by pipreqs in part
+
 ## Version 0.0.8 - 2021/10/21
 * Improve the way the requirement is read by setup.py
 * harmonize the package name
