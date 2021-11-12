@@ -68,7 +68,7 @@ Please update the following paths: `data_path` and `log_path` in `jupyter/train-
 
 - Please cite the following paper
 if you are using the AugMod dataset or Mod-LCNN or Mod-LRCNN networks
-```bash
+```
 @INPROCEEDINGS{CourtatduMasdesBourBoux2021,
        author = {{Courtat}, Thomas and {du Mas des Bourboux}, H{\'e}lion},
     booktitle = {2021 International Symposium on Networks, Computers and Communications (ISNCC)},
