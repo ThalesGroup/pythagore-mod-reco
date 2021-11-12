@@ -1,5 +1,5 @@
 # pythagore-mod-reco
-Modulation recognition AI algorithms benchmark.
+Modulation recognition AI algorithms benchmark.\
 This project contains a Jupyter Notebook for the interactive benchmark, deep learning networks and a few utility functions gathered into a package.
 
 ## Package to run modulation recognition on raw I/Q radio samples
@@ -72,7 +72,7 @@ if you are using the AugMod dataset or Mod-LCNN or Mod-LRCNN networks
 @INPROCEEDINGS{CourtatduMasdesBourBoux2021,
        author = {{Courtat}, Thomas and {du Mas des Bourboux}, H{\'e}lion},
     booktitle = {2021 International Symposium on Networks, Computers and Communications (ISNCC)},
-        title = "{A light neural network for modulation detection under impairments}",
+        title = {A light neural network for modulation detection under impairments},
      keywords = {Computer Science - Machine Learning, Electrical Engineering and Systems Science - Signal Processing, Statistics - Machine Learning},
          year = 2021,
         month = october,
@@ -87,8 +87,8 @@ archivePrefix = {arXiv},
       adsnote = {},
           doi = {},
 }
-
 ```
+
 - Please visit https://www.deepsig.ai/datasets to see how to cite RadioML datasets and networks
 
 ## License
