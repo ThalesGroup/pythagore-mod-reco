@@ -4,8 +4,8 @@ This project contains a Jupyter Notebook for the interactive benchmark, deep lea
 
 ## Package to run modulation recognition on raw I/Q radio samples
 
-The acompagning paper is: "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021, in prep."
-submitted to the "2021 International Symposium on Networks, Computers and Communications (ISNCC'21)"
+The acompagning paper is: "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021"
+presented at the "2021 International Symposium on Networks, Computers and Communications (ISNCC'21)"
 (http://www.isncc-conf.org/).
 
 The dataset, and a notebook to reproduce the results can be found on Kaggle: https://www.kaggle.com/hdumasde/pythagoremodreco
@@ -66,7 +66,7 @@ Please update the following paths: `data_path` and `log_path` in `jupyter/train-
 
 ## Citing
 
-- Please cite "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021, in prep."
+- Please cite the following paper
 if you are using the AugMod dataset or Mod-LCNN or Mod-LRCNN networks
 ```bash
 @INPROCEEDINGS{CourtatduMasdesBourBoux2021,
