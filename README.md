@@ -4,8 +4,8 @@ This project contains a Jupyter Notebook for the interactive benchmark, deep lea
 
 ## Package to run modulation recognition on raw I/Q radio samples
 
-The acompagning paper is: "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021, in prep."
-submitted to the "2021 International Symposium on Networks, Computers and Communications (ISNCC'21)"
+The acompagning paper is: "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021"
+presented at the "2021 International Symposium on Networks, Computers and Communications (ISNCC'21)"
 (http://www.isncc-conf.org/).
 
 The dataset, and a notebook to reproduce the results can be found on Kaggle: https://www.kaggle.com/hdumasde/pythagoremodreco
@@ -66,24 +66,28 @@ Please update the following paths: `data_path` and `log_path` in `jupyter/train-
 
 ## Citing
 
-- Please cite "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021, in prep."
+- Please cite the following paper
 if you are using the AugMod dataset or Mod-LCNN or Mod-LRCNN networks
 ```bash
-@ARTICLE{CourtatduMasdesBourBoux2021,
+@INPROCEEDINGS{CourtatduMasdesBourBoux2021,
        author = {{Courtat}, Thomas and {du Mas des Bourboux}, H{\'e}lion},
+    booktitle = {2021 International Symposium on Networks, Computers and Communications (ISNCC)},
         title = "{A light neural network for modulation detection under impairments}",
-      journal = {inprep},
      keywords = {Computer Science - Machine Learning, Electrical Engineering and Systems Science - Signal Processing, Statistics - Machine Learning},
          year = 2021,
-        month = april,
+        month = october,
           eid = {},
+       volume = {},
+       number = {},
         pages = {},
-archivePrefix = {},
-       eprint = {},
- primaryClass = {},
+archivePrefix = {arXiv},
+       eprint = {2003.12260},
+ primaryClass = {cs.LG},
        adsurl = {},
-      adsnote = {}
+      adsnote = {},
+          doi = {},
 }
+
 ```
 - Please visit https://www.deepsig.ai/datasets to see how to cite RadioML datasets and networks
 
