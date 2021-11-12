@@ -69,21 +69,25 @@ Please update the following paths: `data_path` and `log_path` in `jupyter/train-
 - Please cite "A light neural network for modulation detection under impairments, T. Courtat, H. du Mas des Bourboux, 2021, in prep."
 if you are using the AugMod dataset or Mod-LCNN or Mod-LRCNN networks
 ```bash
-@ARTICLE{CourtatduMasdesBourBoux2021,
+@INPROCEEDINGS{CourtatduMasdesBourBoux2021,
        author = {{Courtat}, Thomas and {du Mas des Bourboux}, H{\'e}lion},
+    booktitle = {2021 International Symposium on Networks, Computers and Communications (ISNCC)},
         title = "{A light neural network for modulation detection under impairments}",
-      journal = {inprep},
      keywords = {Computer Science - Machine Learning, Electrical Engineering and Systems Science - Signal Processing, Statistics - Machine Learning},
          year = 2021,
-        month = april,
+        month = october,
           eid = {},
+       volume = {},
+       number = {},
         pages = {},
-archivePrefix = {},
-       eprint = {},
- primaryClass = {},
+archivePrefix = {arXiv},
+       eprint = {2003.12260},
+ primaryClass = {cs.LG},
        adsurl = {},
-      adsnote = {}
+      adsnote = {},
+          doi = {},
 }
+
 ```
 - Please visit https://www.deepsig.ai/datasets to see how to cite RadioML datasets and networks
 
