@@ -1,5 +1,8 @@
 # Release Notes
 
+## Version 0.1.0 - 2021/11/15
+* Improve the README with a plot
+
 ## Version 0.0.9 - 2021/11/10
 * Get the requirement by pipreqs in part
 
