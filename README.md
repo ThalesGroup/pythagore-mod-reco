@@ -10,6 +10,10 @@ presented at the "2021 International Symposium on Networks, Computers and Commun
 
 The dataset, and a notebook to reproduce the results can be found on Kaggle: https://www.kaggle.com/hdumasde/pythagoremodreco
 
+Example: evolution of the error rate with the number of epochs on the AugMod dataset |
+:-----------------------------------------------------------------------------------:|
+![example-training](/sources/network_comparison_AugMod-trained1024.png)              |
+
 ## Setup
 The package requires Python >=3.7.
 
