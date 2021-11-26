@@ -73,23 +73,18 @@ Please update the following paths: `data_path` and `log_path` in `jupyter/train-
 - Please cite the following paper
 if you are using the AugMod dataset or Mod-LCNN or Mod-LRCNN networks
 ```
-@INPROCEEDINGS{CourtatduMasdesBourBoux2021,
+@INPROCEEDINGS{9615851,
        author = {{Courtat}, Thomas and {du Mas des Bourboux}, H{\'e}lion},
     booktitle = {2021 International Symposium on Networks, Computers and Communications (ISNCC)},
         title = {A light neural network for modulation detection under impairments},
-     keywords = {Computer Science - Machine Learning, Electrical Engineering and Systems Science - Signal Processing, Statistics - Machine Learning},
-         year = 2021,
-        month = october,
-          eid = {},
+         year = {2021},
        volume = {},
        number = {},
-        pages = {},
+        pages = {1-7},
+          doi = {10.1109/ISNCC52172.2021.9615851},
 archivePrefix = {arXiv},
        eprint = {2003.12260},
  primaryClass = {cs.LG},
-       adsurl = {},
-      adsnote = {},
-          doi = {},
 }
 ```
 
