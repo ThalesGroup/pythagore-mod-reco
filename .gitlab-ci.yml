@@ -24,6 +24,7 @@ test:
     - pip install pip --upgrade
     - pip install black --upgrade
     - pip install .
+    - black . --diff --check
 
 sast:
   stage: test
