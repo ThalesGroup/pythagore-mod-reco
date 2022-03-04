@@ -22,9 +22,9 @@ test:
   stage: test
   script:
     - pip install pip --upgrade
-    - pip install black --upgrade
-    - pip install .
+    - pip install black typing-extensions --upgrade
     - black . --diff --check
+    - pip install .
 
 sast:
   stage: test
