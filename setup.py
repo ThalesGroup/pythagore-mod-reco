@@ -23,7 +23,7 @@ setup(
     version=VERSION,
     install_requires=[
         'numpy>=1.19.5',
-        'matplotlib>=3.4.3',
+        'matplotlib>=3.3.4',
         'h5py>=3.1.0',
         'tensorflow>=2.6.0',
         'jupyterlab>=3.1.12',
