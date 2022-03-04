@@ -1,5 +1,10 @@
 # Release Notes
 
+## Version 0.0.8 - 2022/03/04
+* Add CI/CD
+* fix matplotlib version
+* apply black formating
+
 ## Version 0.0.7 - 2021/10/06
 * Improve the way the version number is defined
 
