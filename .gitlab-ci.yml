@@ -1,0 +1,45 @@
+variables:
+  CACHE_DIR: "$CI_PROJECT_DIR/.cache/"
+  APT_CACHE_DIR: "$CACHE_DIR/apt-cache/"
+  PIP_CACHE_DIR: "$CACHE_DIR/pip/"
+  GIT_DEPTH: "50"
+  GIT_STRATEGY: fetch
+  PIP_REQUIREMENTS_FILE: "requirements.txt"
+
+default:
+  interruptible: true
+  tags:
+    - autoscale
+  cache:
+    paths:
+      - ".cache/pip/"
+      - ".cache/apt-cache/"
+  before_script:
+    - mkdir -pv $APT_CACHE_DIR
+
+test:
+  image: python:3.8
+  stage: test
+  script:
+    - pip install pip --upgrade
+    - pip install black typing-extensions --upgrade
+    - black . --diff --check
+    - pip install .
+
+sast:
+  stage: test
+
+gemnasium-python-dependency_scanning:
+  before_script:
+    - pip install pip --upgrade
+    - pip install pipdeptree --upgrade
+    - cat $PIP_REQUIREMENTS_FILE
+    - cp .requirements-gemnasium.txt $PIP_REQUIREMENTS_FILE
+    - cat $PIP_REQUIREMENTS_FILE
+  stage: test
+
+include:
+  - template: Security/SAST.gitlab-ci.yml
+  - template: Security/SAST-IaC.latest.gitlab-ci.yml
+  - template: Security/Secret-Detection.gitlab-ci.yml
+  - template: Security/Dependency-Scanning.gitlab-ci.yml

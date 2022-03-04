@@ -1,5 +1,10 @@
 # Release Notes
 
+## Version 0.1.2 - 2022/03/04
+* Add CI/CD
+* fix matplotlib version
+* apply black formating
+
 ## Version 0.1.1 - 2021/11/26
 * Update bibtex after public released
 
