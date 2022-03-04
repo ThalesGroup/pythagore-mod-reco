@@ -1,9 +1,22 @@
 # Release Notes
 
-## Version 0.0.8 - 2022/03/04
+## Version 0.1.2 - 2022/03/04
 * Add CI/CD
 * fix matplotlib version
 * apply black formating
+
+## Version 0.1.1 - 2021/11/26
+* Update bibtex after public released
+
+## Version 0.1.0 - 2021/11/15
+* Improve the README with a plot
+
+## Version 0.0.9 - 2021/11/10
+* Get the requirement by pipreqs in part
+
+## Version 0.0.8 - 2021/10/21
+* Improve the way the requirement is read by setup.py
+* harmonize the package name
 
 ## Version 0.0.7 - 2021/10/06
 * Improve the way the version number is defined
