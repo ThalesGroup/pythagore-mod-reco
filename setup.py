@@ -11,8 +11,8 @@ MAINTAINER_EMAIL = "helion.dumasdesbourboux'at'thalesgroup.com"
 URL = "https://github.com/ThalesGroup/"
 LICENSE = "MIT"
 
-exec(open("pythagore_modreco/_version.py").read())
-VERSION = __version__
+with open("pythagore_modreco/_version.py") as f:
+    VERSION = f.read().splitlines()[-1].split("=")[-1].replace('"', "").strip()
 
 with open("requirements.txt") as f:
     REQUIRED = f.read().splitlines()
