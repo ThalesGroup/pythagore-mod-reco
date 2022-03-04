@@ -51,3 +51,4 @@ venv.bak/
 # Data
 *.txt
 *.h5
+*.pdf

@@ -1,6 +1,6 @@
-h5py>=3.5.0
+h5py>=3.1.0
 jupyterlab>=3.2.2
 matplotlib>=3.3.4
-numpy>=1.21.4
+numpy>=1.19.5
 setuptools>=58.5.3
-tensorflow>=2.7.0
+tensorflow>=2.6.2
