@@ -3,6 +3,7 @@ Describe here all the security policies in place on this repository to help your
 ## Goods practices to follow
 
 :warning:**You must never store credentials information into source code or config file in a GitHub repository**
+
 - Block sensitive data being pushed to GitHub by git-secrets or its likes as a git pre-commit hook
 - Audit for slipped secrets with dedicated tools
 - Use environment variables for secrets in CI/CD (e.g. GitHub Secrets) and secret managers in production
@@ -35,11 +36,11 @@ Define the procedure for what a reporter who finds a security issue needs to do 
 
 Define how you intend to update users about new security vulnerabilities as they are found.
 
-## Security related configuration.
+## Security related configuration
 
 Settings users should consider that would impact the security posture of deploying this project, such as HTTPS, authorization and many others.
 
-## Known security gaps & future enhancements.
+## Known security gaps & future enhancements
 
-Security improvements you haven’t gotten to yet.
-Inform users those security controls aren’t in place, and perhaps suggest they contribute an implementation
+Security improvements you haven't gotten to yet.
+Inform users those security controls aren't in place, and perhaps suggest they contribute an implementation
