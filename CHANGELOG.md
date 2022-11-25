@@ -1,5 +1,10 @@
 # Release Notes
 
+## Version 0.1.3 - 2022/11/25
+
+* improve copyright formating
+* improve links
+
 ## Version 0.1.3 - 2022/10/25
 
 * black formating for jupyter
