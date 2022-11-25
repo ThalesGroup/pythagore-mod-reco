@@ -42,9 +42,9 @@ The trainning and testing of algorithms can be performed on several datasets:
 
 - The pythagore-mod-reco AugMod dataset as presented in our article:
 
- - can be found on Kaggle: <https://www.kaggle.com/hdumasde/pythagoremodreco>
+  - can be found on Kaggle: <https://www.kaggle.com/hdumasde/pythagoremodreco>
 
- - can be downloaded with wget
+  - can be downloaded with wget
 
 ```bash
 wget https://augmod.blob.core.windows.net/augmod/augmod.zip
