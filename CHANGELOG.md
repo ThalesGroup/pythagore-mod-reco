@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 0.1.4 - 2023/01/13
+
+* apply flake8
+
 ## Version 0.1.3 - 2022/11/25
 
 * improve copyright formating
